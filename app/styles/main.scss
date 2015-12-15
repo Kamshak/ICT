@@ -1,0 +1,223 @@
+$icon-font-path: '../fonts/';
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Alegreya+Sans:400,300,700);
+
+
+$color-green: #A2E352;
+$color-blue: #285769;
+$color-gray: #3D3E40;
+$color-lightgray:#ACB6BA;
+$color-white: #F6F6FF;
+
+@font-face {
+	font-family: "Flaticon";
+	src: url("../fonts/flaticon.eot");
+	src: url("../fonts/flaticon.eot#iefix") format("embedded-opentype"),
+	url("../fonts/flaticon.woff") format("woff"),
+	url("../fonts/flaticon.ttf") format("truetype"),
+	url("../fonts/flaticon.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+  font-size: 85px;
+  font-style: normal;
+  margin-left: 20px;
+  color: $color-green;
+}.flaticon-coffee26:before {
+	content: "\e000";
+}
+
+$font-size-base: 12px !default;
+$font-size-h1: 3em; // ~36px
+
+$font-family-serif: 'Dancing Script', cursive;
+$font-family-sans-serif: 'Alegreya Sans', sans-serif;
+
+$nav-link-hover-bg: none;
+
+$headings-font-family: $font-family-serif;
+
+
+body {
+ // font-weight: lighter;
+}
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "bower_components/font-awesome/scss/font-awesome.scss";
+// endbower
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px !important;
+  }
+}
+
+html, body, main {
+  padding-top: 0px;
+  height: 100%;
+}
+
+header {
+  h1 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+}
+
+h2 {
+  font-family: $font-family-sans-serif;
+  font-weight: bold;
+  color: $color-blue;
+}
+
+
+#home {
+  height: 100%;
+  width: 100%;
+  display: table;
+  overflow: hidden;
+  
+  /* Parallax Image */
+  background-image: url('/images/dccafe.jpg');
+  background-attachment: fixed;
+  background-position: 50% 0;
+    
+  .container-fluid {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .desc {
+    color: white;
+    
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    
+    .jumbotron {
+      background-color: rgba($color-gray, 0.5);
+      margin-bottom: 0px;
+    }
+    
+    .lead {
+      margin-bottom: 0px;
+    }
+    
+    ul {
+      margin-top: 1em;
+      a {
+        font-size: $font-size-h3;
+        color: white;
+        border-bottom: 2px solid;
+        border-color: $color-lightgray;
+        transition: border-color 0.2s ease-out;
+        margin: 1em;
+      }
+      
+      a:hover {
+        border-color: $color-green;
+      }
+      
+    }
+  }
+}
+
+article {
+  /* Remove top margin from first h2 element to align with container */
+  h2.first-heading {
+    margin-top: 0px;
+  }
+}
+
+#home {
+  padding: 0px;
+}
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+
+  /* Make the masthead heading the same height as the navigation */
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+  .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+  }
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+  p + h4 {
+    margin-top: 28px;
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 18px;  
+  }
+  
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}

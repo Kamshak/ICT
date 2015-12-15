@@ -1,0 +1,35 @@
+{
+  "name": "ictbootstrap",
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass": "~3.3.5",
+    "modernizr": "~2.8.1",
+    "jquery.stellar": "~0.6.2",
+    "font-awesome": "fontawesome#~4.4.0",
+    "waypoints": "~4.0.0"
+  },
+  "overrides": {
+    "bootstrap-sass": {
+      "main": [
+        "assets/stylesheets/_bootstrap.scss",
+        "assets/fonts/bootstrap/*",
+        "assets/javascripts/bootstrap.js"
+      ]
+    },
+    "jquery.stellar": {
+      "main": [
+        "jquery.stellar.js"
+      ]
+    },
+    "waypoints": {
+      "main": [
+        "lib/jquery.waypoints.js",
+        "lib/shortcuts/sticky.js"
+      ]
+    }
+  },
+  "devDependencies": {
+    "chai": "~3.4.0",
+    "mocha": "~2.3.3"
+  }
+}
