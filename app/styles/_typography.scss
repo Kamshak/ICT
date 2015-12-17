@@ -1,0 +1,12 @@
+/* Typography */
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Alegreya+Sans:400,300,700);
+
+$font-size-base: 12px !default;
+$font-size-h1: 3em; // ~36px
+
+$font-family-serif: 'Dancing Script', cursive;
+$font-family-sans-serif: 'Alegreya Sans', sans-serif;
+
+$nav-link-hover-bg: none;
+
+$headings-font-family: $font-family-serif;

@@ -5,10 +5,12 @@ $(document).ready(function() {
       horizontalScrolling: false,
    });
 
-   var sticky = new Waypoint.Sticky({
-      element: $('#navigation')[0]
-   });
-   console.log(sticky);
+  var waypoint = new Waypoint({
+    element: document.getElementById('navigation'),
+    handler: function(direction) {
+      $('.navbar-fixed-top').toggleClass('visible', direction == "down");
+    }
+  })
 
    console.log("DOne");
 });

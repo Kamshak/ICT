@@ -29,62 +29,144 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-  <header>
-
-  </header>
   <main>
-    <section id="home" data-stellar-background-ratio="0.5">
-      <div class="desc">
-        <div class="jumbotron text-center col-sm-8 col-sm-offset-2">
-          <i class="flaticon-coffee26"></i>
-          <h1>DC Café</h1>
-
-          <address class="lead">43 Aungier Street<br/>Dublin 2</address>
-
-          <ul class="nav nav-justified" id="navigation">
-            <li><a>About Us</a></li>
-            <li><a>Menu</a></li>
-            <li><a>Find Us</a></li>
-            <li><a>Media</a></li>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container" style="padding: 10px">
+        <div class="navbar-header text-center">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="z-index: 999">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand"><i class="flaticon-coffee26 icon"></i> <span style="margin-left: 10px">DC Café</span></a>
+        </div>
+        <div class="navbar-main navbar-collapse collapse mainnav">
+          <ul class="nav navbar-nav ">
+            <li class="active"><a href="#about">About Us</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#findus">Find Us</a></li>
+            <li><a href="#media">Media</a></li>
           </ul>
+        </div>
+      </div>
+    </div>
+
+    <section id="home" data-stellar-background-ratio="0.5">
+      <div class="container full-height">
+        <div class="desc Center-Container is-Inline">
+          <div class="jumbotron text-center col-sm-12 Center-Block">
+            <i class="flaticon-coffee26 icon"></i>
+            <h1>DC Café</h1>
+
+            <address class="lead">43 Aungier Street
+              <br/>Dublin 2
+              <br/>Tel: 01 3435 2343
+            </address>
+
+            <ul class="nav nav-justified" id="navigation">
+              <li><a>About Us</a></li>
+              <li><a>Menu</a></li>
+              <li><a>Find Us</a></li>
+              <li><a>Media</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="philosophy" class="container">
-      <div class="row">
+      <article class="row">
         <header>
           <h1 class="col-md-12 text-center">About Us</h1>
         </header>
 
-        <div class="col-md-4">
-          <img src="images/coffee.jpg" style="width:100%" />
+        <div class="col-lg-4 visible-lg">
+          <img src="images/coffee.jpg" class="img-responsive" />
         </div>
-        <article class="col-md-8">
-          <h2 class="first-heading">Coffees</h2> 
+        <article class="col-lg-8 col-md-12">
+          <h2 class="first-heading">Coffees</h2>
           <p>
-            Our coffee comes from hand-picked suppliers who live up to highest standards in <em>quality</em>, <em>sustainability</em> and <em>fair trade</em>. These select coffee beans are roasted to perfection in house. As we obtain our coffee beans in small batches to serve you fresh coffee every time, our selection of coffees will vary weekly. Do not be afraid to try a new roast and let our baristas help you find the beans that best match your taste.
+            Our coffee comes from hand-picked suppliers who live up to highest standards in
+            <em>quality</em>,
+            <em>sustainability</em> and
+            <em>fair trade</em>. These select coffee beans are roasted to perfection in house. As we obtain our coffee beans in small batches to serve you fresh coffee every time, our selection of coffees will vary weekly. Do not be afraid to try a new roast
+            and let our baristas help you find the beans that best match your taste.
           </p>
-          <h2>Cold Pressed Juices</h2> 
+          <h2>Cold Pressed Juices</h2>
           <p>
-            Our delicous, cold pressed juices are supplied by <a href="http://www.greenbeards.ie/">Green Beards</a> in Ranelagh. They use seasonal fruit by local producers which are cold pressed to keep all vitamins and deliciousness from the fresh fruit inside of the juice. For our seasonally changing selection of juices please ask your barista.
+            Our delicous, cold pressed juices are supplied by <a href="http://www.greenbeards.ie/">Green Beards</a> in Ranelagh. They use seasonal fruit by local producers which are cold pressed to keep all vitamins and deliciousness from the fresh fruit
+            inside of the juice. For our seasonally changing selection of juices please ask your barista.
           </p>
         </article>
-      </div>
-
+      </article>
     </section>
-    <section id="philosophy" class="container text-center">
+
+    <div class="container-fluid">
+      <div class="row visible-md" style="height: 300px; overflow: hidden; margin-top: 2em; margin-bottom: 1em">
+        <div class="col-md-12" style="background-image: url(/images/coffee.jpg); height: 100%; background-size: 100%;" data-stellar-background-ratio="-0.01">
+        </div>
+      </div>
+    </div>
+
+    <section id="menu" class="container text-center">
       <div class="row">
         <header>
           <h1 class="col-md-12">Menu</h1>
         </header>
 
-        <div class="col-md-4">
-          <img src="images/coffee.jpg" class="img-responsive" />
-        </div>
-        <article class="col-md-8">
-          <h2>Coffees</h2> Our cold pressed vegetable juices are from Green Beards in Ranelagh. They make delicious raw beverages hand crafted with deep regard for organic growing practices, seasonal harvests, local suppliers and recyclable materials.
-          <h2>Cold Pressed Juices</h2> Our cold pressed vegetable juices are from Green Beards in Ranelagh. They make delicious raw beverages hand crafted with deep regard for organic growing practices, seasonal harvests, local suppliers and recyclable materials.
+        <article class="col-sm-12">
+          <article>
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                  <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Coffees</a>
+                  </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="panel-body">
+                    <ul>
+                      <li><b>Coffee</b>: € 3 <small>Our standard. Choose from Americano and Filter Coffee.</small></li>
+                      <li><b>Espresso</b>: 2€ <small>Our best Arabica beans.</small></li>
+                      <li><b>Double Espresso</b>: 3€ <small>Two shots of espresso for a good kick.</small></li>
+                      <li><b>Flat White</b>: € 3 <small>Espresso, minimally aereated milk.</small></li>
+                      <li><b>Cappuccino</b>: € 3.50 <small>Espresso, foamed milk.</small></li>
+                      <li><b>Latte Macchiato</b>: 3.50€ <small>Layered: Milk, Espresso, Milk Foam.</small></li>
+
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingTwo">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Pastries
+                  </a>
+                  </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                  <div class="panel-body">
+                    Pastry items here
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingThree">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Snacks
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+
+                </div>
+              </div>
+            </div>
+          </article>
         </article>
       </div>
 

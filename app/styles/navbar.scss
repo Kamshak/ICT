@@ -1,0 +1,68 @@
+@import "_colors.scss";
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+
+
+.navbar-brand {
+	font-size: 2em;
+	font-family: $font-family-serif;
+
+  margin-right: 1em;
+
+  @media (max-width: $screen-xs-max) {
+  	position: absolute;
+    width: 100%;
+    left: 0;
+    top: 8px;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+.navbar-fixed-top {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.visible {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+
+@media (min-width: $screen-sm-min) {
+  .mainnav li {
+    margin-right: 1em;
+
+    color: white;
+    border-bottom: 2px solid;
+    border-color: $color-lightgray;
+    transition: border-color 0.2s ease-out;
+    color: #FFF;
+  }
+
+  .mainnav li:hover, .nav li.active {
+    border-bottom: $color-green 2px solid;
+    color: #FFF;
+  }
+
+  .mainnav {
+    > li > a {
+      color: #FFF !important;
+
+      &:hover,
+      &:focus {
+        color: #FFF !important;
+      }
+    }
+    > .active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: #FFF !important;
+      }
+    }
+  }
+}
