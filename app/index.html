@@ -30,7 +30,7 @@
     <![endif]-->
 
   <main>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-inverse navbar-fixed-top" data-scroll-header>
       <div class="container" style="padding: 10px">
         <div class="navbar-header text-center">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="z-index: 999">
@@ -39,20 +39,20 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand"><i class="flaticon-coffee26 icon"></i> <span style="margin-left: 10px">DC Café</span></a>
+          <a class="navbar-brand" href="#home"><i class="flaticon-coffee26 icon"></i> <span style="margin-left: 10px">DC Café</span></a>
         </div>
         <div class="navbar-main navbar-collapse collapse mainnav">
           <ul class="nav navbar-nav ">
-            <li class="active"><a href="#about">About Us</a></li>
+            <li class="active"><a href="#about-us">About Us</a></li>
             <li><a href="#menu">Menu</a></li>
-            <li><a href="#findus">Find Us</a></li>
             <li><a href="#media">Media</a></li>
+            <li><a href="#find-us">Find Us</a></li>
           </ul>
         </div>
       </div>
-    </div>
+    </nav>
 
-    <section id="home" data-stellar-background-ratio="0.5">
+    <section id="home" name="home" data-stellar-background-ratio="0.5">
       <div class="container full-height">
         <div class="desc Center-Container is-Inline">
           <div class="jumbotron text-center col-sm-12 Center-Block">
@@ -65,132 +65,264 @@
             </address>
 
             <ul class="nav nav-justified" id="navigation">
-              <li><a>About Us</a></li>
-              <li><a>Menu</a></li>
-              <li><a>Find Us</a></li>
+              <li><a href="#about-us">About Us</a></li>
+              <li><a href="#menu">Menu</a></li>
               <li><a>Media</a></li>
+              <li><a href="#find-us">Find Us</a></li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="philosophy" class="container">
+    <section id="about-us" name="about-us" class="container">
       <article class="row">
-        <header>
-          <h1 class="col-md-12 text-center">About Us</h1>
+        <div class="col-sm-12">
+        <header class="col-md-12 text-center">
+          <h1>About Us</h1>
         </header>
 
-        <div class="col-lg-4 visible-lg">
-          <img src="images/coffee.jpg" class="img-responsive" />
+        <div class="row">
+
+          <article class="col-lg-8 col-md-12">
+            <h2 class="first-heading">Coffees</h2>
+            <p>
+              Our coffee comes from hand-picked suppliers who live up to highest standards in
+              <em>quality</em>,
+              <em>sustainability</em> and
+              <em>fair trade</em>. These select coffee beans are roasted to perfection in house. As we obtain our coffee beans in small batches to serve you fresh coffee every time, our selection of coffees will vary weekly. Do not be afraid to try a new
+              roast and let our baristas help you find the beans that best match your taste.
+            </p>
+            <h2>Cold Pressed Juices</h2>
+            <p>
+              Our delicous, cold pressed juices are supplied by <a href="http://www.greenbeards.ie/">Green Beards</a> in Ranelagh. They use seasonal fruit by local producers which are cold pressed to keep all vitamins and deliciousness from the fresh
+              fruit inside of the juice. For our seasonally changing selection of juices please ask your barista.
+            </p>
+          </article>
+          <div class="col-lg-4 visible-lg">
+            <img src="images/coffee.jpg" class="img-responsive" />
+          </div>
         </div>
-        <article class="col-lg-8 col-md-12">
-          <h2 class="first-heading">Coffees</h2>
-          <p>
-            Our coffee comes from hand-picked suppliers who live up to highest standards in
-            <em>quality</em>,
-            <em>sustainability</em> and
-            <em>fair trade</em>. These select coffee beans are roasted to perfection in house. As we obtain our coffee beans in small batches to serve you fresh coffee every time, our selection of coffees will vary weekly. Do not be afraid to try a new roast
-            and let our baristas help you find the beans that best match your taste.
-          </p>
-          <h2>Cold Pressed Juices</h2>
-          <p>
-            Our delicous, cold pressed juices are supplied by <a href="http://www.greenbeards.ie/">Green Beards</a> in Ranelagh. They use seasonal fruit by local producers which are cold pressed to keep all vitamins and deliciousness from the fresh fruit
-            inside of the juice. For our seasonally changing selection of juices please ask your barista.
-          </p>
-        </article>
+
+        <div class="row" style="margin-top: 2em">
+          <div class="col-lg-4 visible-lg">
+            <img src="images/foodiesfeed.com_Vancouver-breakfast-burrito2.jpg" class="img-responsive" />
+          </div>
+          <article class="col-lg-8 col-md-12" style="">
+            <h2 class="first-heading">Breakfast
+              <small>
+                <em>Slow down you move too fast - got to make the morning last!</em>
+              </small>
+            </h2>
+            <p>
+              The way you start your day carries sets pace for the entire day. Get it right by starting it with some of our amazingly delicous and healthy breakfast dishes. Try our famous scones or eggs benedict!
+              <br />
+              <span class="highlight">Breakfast is offered:</span>
+              <br />
+              <b>Mon to Fri</b>: 6:30am to 11am
+              <br />
+              <b>Sat &amp; Sun</b>: 9am to 2pm
+            </p>
+            <h2>Pastries</h2>
+            <p>
+              We offer delicous pastries all day. Our pastries are freshly made for us each day. Please ask us about our gluten and lactose free options.
+            </p>
+          </article>
+
+        </div>
+      </div>
       </article>
     </section>
 
-    <div class="container-fluid">
-      <div class="row visible-md" style="height: 300px; overflow: hidden; margin-top: 2em; margin-bottom: 1em">
-        <div class="col-md-12" style="background-image: url(/images/coffee.jpg); height: 100%; background-size: 100%;" data-stellar-background-ratio="-0.01">
+    <div class="container-fluid hidden-lg">
+      <div class="row" style="height: 400px; overflow: hidden; margin-top: 3em; margin-bottom: 0em">
+        <div class="col-md-12" data-stellar-vertical-offset="200" style="background-image: url(/images/table.jpg); height: 400px; background-attachment: fixed; background-position: 75% 0; background-size: 400%" data-stellar-background-ratio="1.4">
         </div>
       </div>
     </div>
 
-    <section id="menu" class="container text-center">
-      <div class="row">
+    <section id="menu" name="menu" class="container text-center">
+      <article class="row">
         <header>
-          <h1 class="col-md-12">Menu</h1>
+          <h1 class="col-md-12 text-center">Menu</h1>
         </header>
 
-        <article class="col-sm-12">
-          <article>
-            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      Coffees</a>
-                  </h4>
-                </div>
-                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                  <div class="panel-body">
-                    <ul>
-                      <li><b>Coffee</b>: € 3 <small>Our standard. Choose from Americano and Filter Coffee.</small></li>
-                      <li><b>Espresso</b>: 2€ <small>Our best Arabica beans.</small></li>
-                      <li><b>Double Espresso</b>: 3€ <small>Two shots of espresso for a good kick.</small></li>
-                      <li><b>Flat White</b>: € 3 <small>Espresso, minimally aereated milk.</small></li>
-                      <li><b>Cappuccino</b>: € 3.50 <small>Espresso, foamed milk.</small></li>
-                      <li><b>Latte Macchiato</b>: 3.50€ <small>Layered: Milk, Espresso, Milk Foam.</small></li>
+        <div class="panel-menu col-lg-6">
+          <div class="panel-heading menu-heading" role="tab" id="headingOne">
+            <h4 class="panel-title">
+              Breakfast
+            </h4>
+            <small style="margin-bottom: -1em">Breakfast is served Mon to Fri: 6:30am to 11am, Sat &amp; Sun: 9am to 2pm</small>
+          </div>
 
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingTwo">
-                  <h4 class="panel-title">
-                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Pastries
-                  </a>
-                  </h4>
-                </div>
-                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                  <div class="panel-body">
-                    Pastry items here
-                  </div>
-                </div>
-              </div>
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingThree">
-                  <h4 class="panel-title">
-                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      Snacks
-                    </a>
-                  </h4>
-                </div>
-                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+          <div class="panel-body">
+            <ul class="menu-list">
+              <li>
+                <h4>Eggs Benedict</h4>
+                <small>Poached free range eggs on a breakfast muffin with smoked salmon, topped with sauce hollandaise.</small>
+                <span class="price">€9.50</span>
+              </li>
+              <li>
+                <h4>Breakfast Burrito</h4>
+                <small>Chorizo Sausage and scrambled eggs in a burrito served with salsa and a fresh salad.</small>
+                <span class="price">€9.50</span>
+              </li>
+              <li>
+                <h4>Blueberry and Banana Bread</h4>
+                <small>Brown Bread with yoghurt, blueberry, banana slices and cinnamon.</small>
+                <h4 class="price">€4.50</h4>
+              </li>
+              <li>
+                <h4>Scrambled Eggs &amp; Avocado</h4>
+                <small>Scrambled eggs on avocado salad served with brown bread.</small>
+                <span class="price">€5</span>
+              </li>
+              <li>
+                <h4>Awesome Scones</h4>
+                <small>Homemade fruit scones served with raspberry jam and clotted cream.</small>
+                <span class="price">€6.50</span>
+              </li>
+              <li>
+                <h4>Fruity Porridge</h4>
+                <small>Organic oat porridge with seasonal fruit.</small>
+                <span class="price">€3.50</span>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-                </div>
-              </div>
+
+        <div class="panel-menu col-lg-6">
+          <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title">
+                  Coffees
+            </h4>
+          </div>
+
+          <div class="panel-body">
+            <ul class="menu-list">
+              <li>
+                <h4>Coffee</h4>
+                <small>Our standard. Choose from Americano or Filter Coffee.</small>
+                <span class="price">€3</span>
+              </li>
+              <li>
+                <h4>Espresso</h4>
+                <small>Made with our best Arabica beans.</small>
+                <span class="price">€2</span>
+              </li>
+              <li>
+                <h4>Double Espresso</h4>
+                <small>Two shots of espresso for a good kick.</small>
+                <h4 class="price">€3</h4>
+              </li>
+              <li>
+                <h4>Flat White</h4>
+                <small>Espresso, steamed milk.</small>
+                <span class="price">€3</span>
+              </li>
+              <li>
+                <h4>Cappuccino</h4>
+                <small>Espresso, frothed milk.</small>
+                <span class="price">€3.50</span>
+              </li>
+              <li>
+                <h4>Latte Macchiato</h4>
+                <small>Layered: milk, espresso, milk foam.</small>
+                <h4 class="price">€3.50</h4>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-12 hidden-xs" style="height: 130px; overflow: hidden; margin-top: 1em; margin-bottom: 1em">
+          <div data-stellar-vertical-offset="300" style="width: 100%; background-image: url(/images/cake.jpg); height: 400px; background-attachment: fixed; background-position: 75% 0; background-size: 100%" data-stellar-background-ratio="1.4">
+          </div>
+        </div>
+
+        <div class="panel-menu col-lg-6">
+          <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title">
+                  Pastries &amp; Snacks
+            </h4>
+          </div>
+
+          <div class="panel-body">
+            <ul class="menu-list">
+              <li>
+                <h4>Berliner</h4>
+                <small>Tasty german pastry ball filled with jam and topped with sugar.</small>
+                <span class="price">€3</span>
+              </li>
+              <li>
+                <h4>Chocolate Chip Cookies</h4>
+                <small>Most tasty cookies in Dublin. Black or White chocolate.</small>
+                <span class="price">€2</span>
+              </li>
+              <li>
+                <h4>Strawberry Cheesecake</h4>
+                <small>Good slice of juicy, tasty chessecake.</small>
+                <h4 class="price">€4</h4>
+              </li>
+              <li>
+                <h4>Apple Crumble</h4>
+                <small>Tasty crumble of irish apples with some caramel crunch.</small>
+                <span class="price">€3</span>
+              </li>
+              <li>
+                <h4>Varying Selection</h4>
+                <small>Just check our display for our varying selection of fresh pastries.</small>
+                <span class="price"></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="panel-menu col-lg-6" style="border: 0">
+          <div class="panel-heading hidden-xs hidden-sm" role="tab">
+            <h4 class="panel-title">
+              &nbsp;
+            </h4>
+          </div>
+          <div class="panel-body">
+            <blockquote>
+              Food, in the end, in our own tradition, is something holy. It's not about nutrients and calories. It's about sharing. It's about honesty. It's about identity.
+              <footer>Louise Fresco</footer>
+            </blockquote>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="find-us" name="find-us" class="container-fluid">
+      <article class="row text-center">
+        <header>
+          <h1 class="col-md-12">Find Us</h1>
+        </header>
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          <div class="col-md-4 col-md-push-8">
+            <address class="lead col-xs-6 col-md-12">
+              <h2 class="brand"><i class="flaticon-coffee26 icon"></i> DC Café</h2>
+              43 Aungier Street
+              <br/>Dublin 2
+              <br/>Tel: 01 3435 2343
+            </address>
+            <div class="col-xs-6 col-md-12">
+              <h3>Opening Times</h3>
+              <b>Mon - Fri: </b>7am to 7pm <br/>
+              <b>Sat &amp; Sun: </b>9am to 7pm
             </div>
-          </article>
-        </article>
-      </div>
-
+          </div>
+          <div class="col-md-8 col-md-pull-4">
+            <img style="margin-left:auto; margin-right: auto" src="https://maps.googleapis.com/maps/api/staticmap?center=12%20Aungier%20Street,%20Dublin,%20Irland&zoom=17&size=1024x400&key=AIzaSyCQGNrd3we-7uVrh_N2zkhfZ_eVllOCHTs&markers=size:mid%7Ccolor:red%7C12%20Aungier%20Street,%20Dublin,%20Irland" class="img-responsive"></img>
+          </div>
+        </div>
+        <div class="col-xs-12" style="margin-top: 2em; margin-bottom: 0px">
+          <small>Website &copy;2015 Valentin Funk. Coffee Cup Icon made by Freepik from www.flaticon.com.</small>
+        </div>
+      </article>
     </section>
   </main>
-
-
-  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-  <script>
-    (function(b, o, i, l, e, r) {
-      b.GoogleAnalyticsObject = l;
-      b[l] || (b[l] =
-        function() {
-          (b[l].q = b[l].q || []).push(arguments)
-        });
-      b[l].l = +new Date;
-      e = o.createElement(i);
-      r = o.getElementsByTagName(i)[0];
-      e.src = 'https://www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e, r)
-    }(window, document, 'script', 'ga'));
-    ga('create', 'UA-XXXXX-X');
-    ga('send', 'pageview');
-  </script>
 
   <!-- build:js scripts/vendor.js -->
   <!-- bower:js -->
@@ -198,6 +330,7 @@
   <script src="/bower_components/jquery.stellar/jquery.stellar.js"></script>
   <script src="/bower_components/waypoints/lib/jquery.waypoints.js"></script>
   <script src="/bower_components/waypoints/lib/shortcuts/sticky.js"></script>
+  <script src="/bower_components/smooth-scroll/dist/js/smooth-scroll.js"></script>
   <!-- endbower -->
   <!-- endbuild -->
 

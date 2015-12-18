@@ -3,7 +3,9 @@
 
 
 .navbar-brand {
-	font-size: 2em;
+	span, i {
+		font-size: 2em;
+	}
 	font-family: $font-family-serif;
 
   margin-right: 1em;

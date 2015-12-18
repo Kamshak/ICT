@@ -1,6 +1,9 @@
 @import "_colors.scss";
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 
+/*
+  Styles for centering the vcard inside the full height section
+*/
 .Center-Container.is-Inline {
   text-align: center;
   overflow: auto;
@@ -36,26 +39,28 @@
 
 	padding: 0px;
 
+  // Fill the entire first page
   height: 100%;
   width: 100%;
   display: table;
   overflow: hidden;
+  .container-fluid {
+    margin: 0px;
+    padding: 0px;
+  }
 
   /* Parallax Image */
   background-image: url('/images/dccafe.jpg');
   background-attachment: fixed;
   background-position: 50% 0;
 
-  .container-fluid {
-    margin: 0px;
-    padding: 0px;
-  }
-
+  // ALign the heading
 	h1 {
 		margin-top: -6px;
     margin-bottom: 7px;
 	}
 
+  // Style the card
   .desc {
     color: white;
 
@@ -93,7 +98,6 @@
       a:hover {
         border-color: $color-green;
       }
-
     }
   }
 }

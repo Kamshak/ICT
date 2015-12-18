@@ -3,6 +3,7 @@
 
 $font-size-base: 12px !default;
 $font-size-h1: 3em; // ~36px
+$font-size-h4: 1.1em; // ~36px
 
 $font-family-serif: 'Dancing Script', cursive;
 $font-family-sans-serif: 'Alegreya Sans', sans-serif;
@@ -10,3 +11,8 @@ $font-family-sans-serif: 'Alegreya Sans', sans-serif;
 $nav-link-hover-bg: none;
 
 $headings-font-family: $font-family-serif;
+
+article {
+	text-align: justify;
+  text-justify: inter-word;
+}

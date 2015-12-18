@@ -1,0 +1,95 @@
+@import "_colors.scss";
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+
+// Align the subheading nicely inline
+.menu-heading {
+  position: relative;
+  small {
+    position: absolute;
+    line-height: 1em;
+  }
+}
+
+ul.menu-list {
+  list-style-type: none;
+  padding-left: 0px;
+  margin: 0px;
+
+  li:not(:last-child) {
+    margin-bottom: 1em;
+  }
+
+  li {
+    text-transform: uppercase;
+    text-align: left;
+    padding-right: 1em;
+    position: relative;
+
+    h4 {
+      font-family: $font-family-sans-serif !important;
+      text-align: left;
+      margin-bottom: 0.2em;
+    }
+
+    small {
+      color: $color-gray;
+      display: block;
+      text-transform: none;
+      font-weight: lighter;
+      padding-right: 3em;
+    }
+
+    .price {
+      position: absolute;
+      right: 0px;
+      display: block;
+      top: 0px;
+    }
+  }
+}
+
+.panel-menu {
+  h4.panel-title {
+    font-family: $font-family-sans-serif;
+    color: $color-blue;
+    font-size: $font-size-h2;
+    font-weight: bolder;
+  }
+
+  blockquote {
+    font-size: 1.5em;
+    font-weight: 100;
+    color: $color-gray;
+    font-style: italic;
+  }
+}
+
+#find-us {
+  color: white !important;
+  background-color: $color-blue;
+  h1, h2, h3 {
+    color: white;
+  }
+
+  h2, h3 {
+    margin-top: 0px;
+    color: $color-green;
+  }
+
+  h2.brand {
+    font-family: $font-family-serif;
+    i {
+      color: $color-green;
+    }
+  }
+
+  address {
+    color:white;
+  }
+
+  small {
+    font-weight: lighter;
+    color: $color-lightgray;
+  }
+  padding-bottom: 2em;
+}
