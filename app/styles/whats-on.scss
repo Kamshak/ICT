@@ -1,0 +1,52 @@
+@import "_colors.scss";
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+
+// Add a background to the image captions to make them more readable
+.carousel-caption{
+    background: rgba(0,0,0,0.5);
+    padding: 1em;
+    margin-bottom: 2em;
+}
+
+// Center images inside of the carousel
+.carousel-inner img {
+  margin: auto;
+}
+
+// Style the events
+.event {
+  // On mobile image is centered above text
+  img {
+    @media (min-width: $screen-sm-min) {
+      margin-top: 1em;
+    }
+    @media(max-width: $screen-sm-max) {
+      max-width: 250px;
+    }
+    margin: auto;
+  }
+  padding: 10px;
+
+  p.date {
+    font-weight: lighter;
+    color: $color-blue;
+  }
+  min-height: 293px; // Force equal height
+}
+
+// Add margin between the To see/To Hear articles
+#whatson {
+  article > article {
+    margin-bottom: 1em;
+  }
+}
+
+// Style the large heading with a subeading
+.subheading-block {
+  h1 {
+    margin-bottom: 5px;
+  }
+  h3 {
+    margin-top: 0px; margin-bottom: 2em;
+  }
+}

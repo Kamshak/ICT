@@ -25,7 +25,8 @@
 </head>
 
 <!-- data-spy, target and offset are used by bootstrap to determine the current position on the page and highlight it on the menu. -->
-<body data-spy="scroll" data-target="#fixed-nav" data-offset="100">
+
+<body data-spy="scroll" data-target="#fixed-nav" data-offset="220">
   <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -45,10 +46,10 @@
         </div>
         <div class="navbar-collapse collapse mainnav">
           <ul class="nav navbar-nav ">
-            <li class="active"><a href="#about-us">About Us</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#media">Media</a></li>
-            <li><a href="#find-us">Find Us</a></li>
+            <li class="active"><a data-pagelink href="#about-us">About Us</a></li>
+            <li><a data-pagelink href="#menu">Our Menu</a></li>
+            <li><a data-pagelink href="#whatson">What's On</a></li>
+            <li><a data-pagelink href="#find-us">Find Us</a></li>
           </ul>
         </div>
       </div>
@@ -68,10 +69,10 @@
             </address>
 
             <ul class="nav nav-justified" id="navigation">
-              <li><a href="#about-us">About Us</a></li>
-              <li><a href="#menu">Menu</a></li>
-              <li><a>Media</a></li>
-              <li><a href="#find-us">Find Us</a></li>
+              <li><a data-pagelink href="#about-us">About Us</a></li>
+              <li><a data-pagelink href="#menu">Our Menu</a></li>
+              <li><a data-pagelink href="#whatson">What's On</a></li>
+              <li><a data-pagelink href="#find-us">Find Us</a></li>
             </ul>
           </div>
         </div>
@@ -82,59 +83,80 @@
     <section id="about-us" name="about-us" class="container">
       <article class="row">
         <div class="col-sm-12">
-        <header class="col-md-12 text-center">
-          <h1>About Us</h1>
-        </header>
+          <header class="col-md-12 text-center">
+            <h1>About Us</h1>
+          </header>
+          <div class="row">
+            <article class="col-lg-8 col-md-12">
+              <h2 class="first-heading">Coffees</h2>
+              <p>
+                Our coffee comes from hand-picked suppliers who live up to highest standards in
+                <em>quality</em>,
+                <em>sustainability</em> and
+                <em>fair trade</em>. These select coffee beans are roasted to perfection in house. As we obtain our coffee beans in small batches to serve you fresh coffee every time, our selection of coffees will vary weekly. Do not be afraid to try a new
+                roast and let our baristas help you find the beans that best match your taste.
+              </p>
+              <h2>Cold Pressed Juices</h2>
+              <p>
+                Our delicous, cold pressed juices are supplied by <a href="http://www.greenbeards.ie/">Green Beards</a> in Ranelagh. They use seasonal fruit by local producers which are cold pressed to keep all vitamins and deliciousness from the fresh
+                fruit inside of the juice. For our seasonally changing selection of juices please ask your barista.
+              </p>
+            </article>
+            <div class="col-lg-4 visible-lg">
+              <img src="images/coffee.jpg" class="img-responsive" />
+            </div>
+          </div>
 
-        <div class="row">
+          <div class="row" style="margin-top: 2em">
+            <div class="col-lg-4 visible-lg">
+              <img src="images/foodiesfeed.com_Vancouver-breakfast-burrito2.jpg" class="img-responsive" />
+            </div>
+            <article class="col-lg-8 col-md-12" style="">
+              <h2 class="first-heading">Breakfast
+                <small>
+                  <em>Slow down you move too fast - got to make the morning last!</em>
+                </small>
+              </h2>
+              <p>
+                The way you start your day carries sets pace for the entire day. Get it right by starting it with some of our amazingly delicous and healthy breakfast dishes. Try our famous scones or eggs benedict!
+                <br />
+                <span class="highlight">Breakfast is offered:</span>
+                <br />
+                <b>Mon to Fri</b>: 6:30am to 11am
+                <br />
+                <b>Sat &amp; Sun</b>: 9am to 2pm
+              </p>
+              <h2>Pastries &amp; Snacks</h2>
+              <p>
+                We offer delicous pastries all day. Our pastries are freshly made for us each day. Please ask us about our gluten and lactose free options.
+              </p>
+            </article>
+          </div>
 
-          <article class="col-lg-8 col-md-12">
-            <h2 class="first-heading">Coffees</h2>
-            <p>
-              Our coffee comes from hand-picked suppliers who live up to highest standards in
-              <em>quality</em>,
-              <em>sustainability</em> and
-              <em>fair trade</em>. These select coffee beans are roasted to perfection in house. As we obtain our coffee beans in small batches to serve you fresh coffee every time, our selection of coffees will vary weekly. Do not be afraid to try a new
-              roast and let our baristas help you find the beans that best match your taste.
-            </p>
-            <h2>Cold Pressed Juices</h2>
-            <p>
-              Our delicous, cold pressed juices are supplied by <a href="http://www.greenbeards.ie/">Green Beards</a> in Ranelagh. They use seasonal fruit by local producers which are cold pressed to keep all vitamins and deliciousness from the fresh
-              fruit inside of the juice. For our seasonally changing selection of juices please ask your barista.
-            </p>
-          </article>
-          <div class="col-lg-4 visible-lg">
-            <img src="images/coffee.jpg" class="img-responsive" />
+          <div class="row" style="margin-top: 2em">
+            <div class="col-lg-4 col-lg-push-8 visible-lg">
+              <img src="images/foodiesfeed.com_medium-beef-steak-with-spinach-potatoes.jpg" class="img-responsive" />
+            </div>
+            <article class="col-lg-8 col-lg-pull-4 col-md-12" style="">
+              <h2 class="first-heading">Lunch</h2>
+              <p>
+                At DC Café we only use irish meats for our lunch and dinner dishes. We serve you tasty, wholesome food in generous portions. Only when you are well fed you can achieve great things.
+                <br />
+                <span class="highlight">Lunch is offered:</span>
+                <br />
+                <b>Mon to Sun</b>: 12am to 3pm
+              </p>
+              <h2>Dinner</h2>
+              <p>
+                Enjoy dinner in a relaxed, casual atmosphere with great food. We offer a selection of meat and fish dishes. Please ask your server for vegetarian options. We use fresh, seasonal ingredienst from local suppliers in our seasonally changing menu.
+                <br />
+                <span class="highlight">Dinner is offered:</span>
+                <br />
+                <b>Mon to Sun</b>: 5pm to 10pm
+              </p>
+            </article>
           </div>
         </div>
-
-        <div class="row" style="margin-top: 2em">
-          <div class="col-lg-4 visible-lg">
-            <img src="images/foodiesfeed.com_Vancouver-breakfast-burrito2.jpg" class="img-responsive" />
-          </div>
-          <article class="col-lg-8 col-md-12" style="">
-            <h2 class="first-heading">Breakfast
-              <small>
-                <em>Slow down you move too fast - got to make the morning last!</em>
-              </small>
-            </h2>
-            <p>
-              The way you start your day carries sets pace for the entire day. Get it right by starting it with some of our amazingly delicous and healthy breakfast dishes. Try our famous scones or eggs benedict!
-              <br />
-              <span class="highlight">Breakfast is offered:</span>
-              <br />
-              <b>Mon to Fri</b>: 6:30am to 11am
-              <br />
-              <b>Sat &amp; Sun</b>: 9am to 2pm
-            </p>
-            <h2>Pastries</h2>
-            <p>
-              We offer delicous pastries all day. Our pastries are freshly made for us each day. Please ask us about our gluten and lactose free options.
-            </p>
-          </article>
-
-        </div>
-      </div>
       </article>
     </section>
 
@@ -197,11 +219,10 @@
           </div>
         </div>
 
-
         <div class="panel-menu col-lg-6">
           <div class="panel-heading menu-heading" role="tab" id="headingOne">
             <h4 class="panel-title">
-                  Coffees
+              Coffees &amp; Beverages
             </h4>
             <small>All milk can be replaced with soymilk.</small>
           </div>
@@ -238,6 +259,102 @@
                 <small>Layered: milk, espresso, milk foam.</small>
                 <h4 class="price">€3.50</h4>
               </li>
+              <li>
+                <h4>Cold pressed fruit juice</h4>
+                <small>Seasonal selection of cold pressed fruit juice.</small>
+                <h4 class="price">€3.50</h4>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Small seperator bar on larger resolutions where menu groups are next to each other. -->
+        <div class="col-md-12 hidden-xs" style="height: 130px; overflow: hidden; margin-top: 1em; margin-bottom: 1em">
+          <div data-stellar-vertical-offset="300" style="width: 100%; background-image: url(/images/foodiesfeed.com_summer-juicy-beef-burger.jpg); height: 400px; background-attachment: fixed; background-position: 75% 0; background-size: 100%" data-stellar-background-ratio="1.4">
+          </div>
+        </div>
+
+        <div class="panel-menu col-lg-6">
+          <div class="panel-heading menu-heading" role="tab" id="headingOne">
+            <h4 class="panel-title">
+              Lunch
+            </h4>
+            <small>Dishes marked with
+              <span class="gluten-free">(T)</span> are available for takeaway. Offered daily, 12am to 3pm.</small>
+          </div>
+
+          <div class="panel-body">
+            <ul class="menu-list">
+              <li>
+                <h4>Spaghetti and Beetroot
+                  <span class="gluten-free">(T)</span>
+                </h4>
+                <small>With goat's cheese and deep fried onion rings.</small>
+                <span class="price">€9</span>
+              </li>
+              <li>
+                <h4>Lemony roast chicken</h4>
+                <small>With créme fraiche and crispy bacon sauce. Served with a side salad.</small>
+                <span class="price">€10</span>
+              </li>
+              <li>
+                <h4>Blackened Chicken
+                  <span class="gluten-free">(T)</span>
+                </h4>
+                <small>Chargrilled chicken with aubergines and tomatoes.</small>
+                <h4 class="price">€10</h4>
+              </li>
+              <li>
+                <h4>Grilled tuna steak</h4>
+                <small>With vegetable kebabs and bean salad.</small>
+                <span class="price">€15.50</span>
+              </li>
+              <li>
+                <h4>Philly Steak Sandwich
+                  <span class="gluten-free">(T)</span>
+                </h4>
+                <small>Steak stripes and cheese in a long breadroll.</small>
+                <span class="price">€7</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="panel-menu col-lg-6">
+          <div class="panel-heading menu-heading" role="tab" id="headingOne">
+            <h4 class="panel-title">
+              Dinner
+            </h4>
+            <small>All of our meats are of irish origin. Offered every day, 5pm to 10pm.</small>
+          </div>
+
+          <div class="panel-body">
+            <ul class="menu-list">
+              <li>
+                <h4>Perfect Beef Burger</h4>
+                <small>Our signature burger with onion rings and watercress, hand cut chips.</small>
+                <span class="price">€14</span>
+              </li>
+              <li>
+                <h4>Roast Pork with Cider Sauce</h4>
+                <small>Irish pork served with roast potatoes and vegetables.</small>
+                <span class="price">€12</span>
+              </li>
+              <li>
+                <h4>Stuffed Loin of Lamb</h4>
+                <small>Lamb Loin with glazed carrots and mashed swede.</small>
+                <h4 class="price">€14</h4>
+              </li>
+              <li>
+                <h4>Beef fillet on salad</h4>
+                <small>Irish beef on stilton and red onion salad.</small>
+                <span class="price">€15.50</span>
+              </li>
+              <li>
+                <h4>Daily fresh market fish</h4>
+                <small>Varying selection of fresh fish cooked to order. Please ask your server for details.</small>
+                <span class="price"></span>
+              </li>
             </ul>
           </div>
         </div>
@@ -251,9 +368,10 @@
         <div class="panel-menu col-lg-6">
           <div class="panel-heading menu-heading" role="tab" id="headingOne">
             <h4 class="panel-title">
-                  Pastries &amp; Snacks
+              Pastries &amp; Snacks
             </h4>
-            <small>Gluten Free <span class="gluten-free">(GF)</span> options available</small>
+            <small>Gluten Free
+              <span class="gluten-free">(GF)</span> options available.</small>
           </div>
 
           <div class="panel-body">
@@ -274,7 +392,9 @@
                 <h4 class="price">€4</h4>
               </li>
               <li>
-                <h4>Apple Crumble <span class="gluten-free">(GF)</span></h4>
+                <h4>Apple Crumble
+                  <span class="gluten-free">(GF)</span>
+                </h4>
                 <small>Tasty crumble of irish apples with some caramel crunch.</small>
                 <span class="price">€3</span>
               </li>
@@ -304,9 +424,118 @@
       </article>
     </section>
 
-    <!-- Media section for impressions -->
-    <section id="media" name="media" class="container">
+    <!-- What's on section divided into two subsections -->
+    <section id="whatson" name="whatson" class="container">
+      <article class="row">
+        <header class="col-xs-12 text-center subheading-block">
+          <h1>What's on</h1>
+          <h3>If you are new to Dublin or want to explore some interesting new places we have collected a few recommendations for you here</h3>
+        </header>
+        <article class="col-md-12">
+          <h2>To See</h2>
+          <p>Dublin has great sights to explore. Browse through some of our pictures and be sure to visit the places!</p>
 
+          <!-- Image carousel for some sights in Dublin -->
+          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img src="images/dunloaghaire.jpg" alt="Dun Loaghaire">
+                <div class="carousel-caption">
+                  Dun Loaghaire is one of the most beautiful seaside spots in Dublin. It's far out in the south. We love to walk along the beautiful pier.
+                </div>
+              </div>
+              <div class="item">
+                <img src="images/52558A83F2.jpg" alt="Dalkey Island" />
+                <div class="carousel-caption">
+                  We love dalkey island for its peacefulness. Grab a coffee to go and take the DART all the way to Howth to look at the uninhabited island.
+                </div>
+              </div>
+              <div class="item">
+                <img src="images/1755E9DB9C.jpg" alt="Trinity College" />
+                <div class="carousel-caption">
+                  As former Trinity Student, DC Café Owner Adam Clarke loves to drink a takeaway Latte on campus. Must see for every visitor &amp; local in Dublin.
+                </div>
+              </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="col-md-12">
+          <h2>To Hear</h2>
+          <p>There's always great music in Dublin. Check out some of theses upcoming concerts:</p>
+          <div class="row">
+            <div class="col-lg-6 event clearfix">
+              <div class="col-md-6">
+                <img src="images/secret-songs.jpg" class="img-responsive" alt="Secret Songs" />
+              </div>
+              <div class="col-md-6">
+                <h3>Secret Songs</h3>
+                <p class="date">26 December 2015</span>
+                <p>
+                  Secret Songs is a series of gigs that celebrate hidden gems, forgotten classics and obscure anthems. December’s gig will have a little flavour of Christmas. <a href="http://projectartscentre.ie/event/secret-songs-december-2015/">More...</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-6 event clearfix">
+              <div class="col-md-6">
+                <img src="images/sun-collective-1-300x300.jpg" class="img-responsive" alt="Sun Collective" />
+              </div>
+              <div class="col-md-6">
+                <h3>Sun Collective @ Smock Alley Theatre</h3>
+                <p class="date">28 December 2015</span>
+                <p>
+                  Sun collective can be frequently heard as soundtrack in the Café. See them live in the Smock Alley Theatre. <a href="http://dublinconcerts.ie/concert/sun-collective-smock-alley-theatre-december-22nd-2015/">More...</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-6 event clearfix">
+              <div class="col-md-6">
+                <img src="images/Kodaline-kilmainham-marquee.jpeg" class="img-responsive" alt="Kodaline Marquee" />
+              </div>
+              <div class="col-md-6">
+                <h3>Kodaline @ Marlay Park</h3>
+                <p class="date">18 April 2016</span>
+                <p>
+                  Both Kodaline Marquee and Jess Glynne (support) are long time favorites of our staff. To see both together live is a unique opportunity that should not be missed! <a href="http://dublinconcerts.ie/concert/kodaline-marlay-park-july-8th-2016/">More...</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-6 event clearfix">
+              <div class="col-md-6">
+                <img src="images/picturehouse.png" class="img-responsive" alt="Picture House" />
+              </div>
+              <div class="col-md-6">
+                <h3>PictureHouse @ The Unitarian Church</h3>
+                <p class="date">8 July 2016</span>
+                <p>
+                  PictureHouse makes some of the best relaxing beats on the planet. We will be seeing him in Dublin and you should, too! <a href="http://dublinconcerts.ie/concert/picturehouse-the-unitarian-church-april-17th-2016/">More...</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </article>
     </section>
 
     <!-- Use a fluid container in this section to span the background across the entire page -->
@@ -325,11 +554,13 @@
             </address>
             <div class="col-xs-6 col-md-12">
               <h3>Opening Times</h3>
-              <b>Mon - Fri: </b>7am to 7pm <br/>
+              <b>Mon - Fri: </b>7am to 7pm
+              <br/>
               <b>Sat &amp; Sun: </b>9am to 7pm
             </div>
           </div>
           <div class="col-md-8 col-md-pull-4">
+            <!-- For faster site loading a static image is used instead of an embedded map. Embedded maps can also confuse the user as scrolling in them zooms and thus disables scrolling within the site -->
             <img src="https://maps.googleapis.com/maps/api/staticmap?center=12%20Aungier%20Street,%20Dublin,%20Irland&zoom=17&size=1024x400&key=AIzaSyCQGNrd3we-7uVrh_N2zkhfZ_eVllOCHTs&markers=size:mid%7Ccolor:red%7C12%20Aungier%20Street,%20Dublin,%20Irland" class="img-responsive center"></img>
           </div>
         </div>

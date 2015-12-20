@@ -46,7 +46,7 @@ $(document).ready(function() {
 
   // Initialize smooth scroll
   smoothScroll.init({
-    selector: '[href]', // Selector for links (must be a valid CSS selector)
+    selector: '[data-pagelink]', // Selector for links (must be a valid CSS selector)
     selectorHeader: '[data-scroll-header]', // Selector for fixed headers (must be a valid CSS selector)
     speed: 500, // Integer. How fast to complete the scroll in milliseconds
     easing: 'easeInOutCubic', // Easing pattern to use
