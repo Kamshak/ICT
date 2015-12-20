@@ -1,5 +1,3 @@
-console.log('\'Allo \'Allo!');
-
 $(document).ready(function() {
   // Initialize Stellar Library (parallax backgrounds)
    $.stellar({
@@ -13,7 +11,22 @@ $(document).ready(function() {
     handler: function(direction) {
       $('.navbar-fixed-top').toggleClass('visible', direction == "down");
     }
-  })
+  });
+
+  // Add active class to header on scrolling past section
+  $('section').each(function(index, element) {
+    return;
+    var menuWaypoint = new Waypoint({
+      element: element,
+      handler: function(direction) {
+        console.log(element, direction, "[href=#" + element.name + "]");
+        $('.navbar-nav').children().toggleClass('active', false);
+        var link = $('.navbar-nav').find("[href=#" + element.attributes.name.value + "]");
+        console.log(link);
+        link.parent().toggleClass('active', true);
+      }
+    });
+  });
 
   // Responsive parallax backgrounds
   var fakeListenerParallax;

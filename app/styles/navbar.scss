@@ -2,6 +2,7 @@
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 
 
+// Style the brand text & icon in the navbar
 .navbar-brand {
 	span, i {
 		font-size: 2em;
@@ -10,6 +11,7 @@
 
   margin-right: 1em;
 
+	// Center the logo on mobile
   @media (max-width: $screen-xs-max) {
   	position: absolute;
     width: 100%;
@@ -20,6 +22,7 @@
   }
 }
 
+// Fade effects for the navbar
 .navbar-fixed-top {
   visibility: hidden;
   opacity: 0;
@@ -33,7 +36,14 @@
   transition: opacity 0.3s, visibility 0.3s;
 }
 
+// Text fading for smoother transition
+.navbar-nav {
+  > li > a {
+  	transition: color 0.2s ease-out;
+  }
+}
 
+// Overwrite colors on the nav links and add underlines
 @media (min-width: $screen-sm-min) {
   .mainnav li {
     margin-right: 1em;
@@ -41,7 +51,7 @@
     color: white;
     border-bottom: 2px solid;
     border-color: $color-lightgray;
-    transition: border-color 0.2s ease-out;
+    transition: border-color 0.2s ease-out; // Smooth fade the bottom bars under nav links
     color: #FFF;
   }
 

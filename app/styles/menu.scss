@@ -10,27 +10,37 @@
   }
 }
 
+// Higlight GF option
+.gluten-free {
+  color: darken($color-green, 20%);
+}
+
+// Style and align the menu
 ul.menu-list {
   list-style-type: none;
   padding-left: 0px;
   margin: 0px;
 
+  // Spacing between elements but not after the last
   li:not(:last-child) {
     margin-bottom: 1em;
   }
 
+  // Style the individual list elements
   li {
     text-transform: uppercase;
     text-align: left;
     padding-right: 1em;
-    position: relative;
+    position: relative; // Set parent for .price so position:absolute works
 
+    // Menu item text
     h4 {
       font-family: $font-family-sans-serif !important;
       text-align: left;
       margin-bottom: 0.2em;
     }
 
+    // Subtitle under the menu items
     small {
       color: $color-gray;
       display: block;
@@ -39,6 +49,7 @@ ul.menu-list {
       padding-right: 3em;
     }
 
+    // Position price to the very right
     .price {
       position: absolute;
       right: 0px;
@@ -48,6 +59,7 @@ ul.menu-list {
   }
 }
 
+// Adjust the titles for each menu group (e.g. coffes, pastries)
 .panel-menu {
   h4.panel-title {
     font-family: $font-family-sans-serif;
@@ -56,40 +68,11 @@ ul.menu-list {
     font-weight: bolder;
   }
 
+  // Style the food blockquote
   blockquote {
     font-size: 1.5em;
     font-weight: 100;
     color: $color-gray;
     font-style: italic;
   }
-}
-
-#find-us {
-  color: white !important;
-  background-color: $color-blue;
-  h1, h2, h3 {
-    color: white;
-  }
-
-  h2, h3 {
-    margin-top: 0px;
-    color: $color-green;
-  }
-
-  h2.brand {
-    font-family: $font-family-serif;
-    i {
-      color: $color-green;
-    }
-  }
-
-  address {
-    color:white;
-  }
-
-  small {
-    font-weight: lighter;
-    color: $color-lightgray;
-  }
-  padding-bottom: 2em;
 }

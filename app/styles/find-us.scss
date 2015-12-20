@@ -1,0 +1,38 @@
+@import "_colors.scss";
+@import "_typography.scss";
+
+#find-us {
+  color: white !important;
+  background-color: $color-blue;
+  h1, h2, h3 {
+    color: white;
+  }
+
+  h2, h3 {
+    margin-top: 0px;
+    color: $color-green;
+  }
+
+  h2.brand {
+    font-family: $font-family-serif;
+    i {
+      color: $color-green;
+    }
+  }
+
+  address {
+    color:white;
+  }
+
+  small {
+    font-weight: lighter;
+    color: $color-lightgray;
+  }
+  padding-bottom: 2em;
+
+  // Align the footer within the section
+  footer {
+    margin-top: 2em;
+    margin-bottom: 0px;
+  }
+}

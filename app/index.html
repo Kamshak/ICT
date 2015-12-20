@@ -1,14 +1,13 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
 
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="">
+  <meta name="description" content="Website of DC Cafe in Dublin. We offer great coffe, lovely pastries and breakfast.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DC Cafe Dublin</title>
-
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <!-- Place favicon.ico in the root directory -->
+  <title>DC Café Dublin</title>
+  <meta name="keywords" content="Coffee, Pastries, Breakfast, Cafe, Relaxed">
+  <meta name="author" content="Valentin Funk">
 
   <!-- build:css styles/vendor.css -->
   <!-- bower:css -->
@@ -19,18 +18,21 @@
   <link rel="stylesheet" href="styles/main.css">
   <!-- endbuild -->
 
+  <!-- Include modernizr (similar to shim tools) -->
   <!-- build:js scripts/vendor/modernizr.js -->
   <script src="/bower_components/modernizr/modernizr.js"></script>
   <!-- endbuild -->
 </head>
 
-<body>
+<!-- data-spy, target and offset are used by bootstrap to determine the current position on the page and highlight it on the menu. -->
+<body data-spy="scroll" data-target="#fixed-nav" data-offset="100">
   <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
   <main>
-    <nav class="navbar navbar-inverse navbar-fixed-top" data-scroll-header>
+    <!-- Navbar that fades in when scrolling past the menu in the first page -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="fixed-nav" data-scroll-header>
       <div class="container" style="padding: 10px">
         <div class="navbar-header text-center">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="z-index: 999">
@@ -41,7 +43,7 @@
           </button>
           <a class="navbar-brand" href="#home"><i class="flaticon-coffee26 icon"></i> <span style="margin-left: 10px">DC Café</span></a>
         </div>
-        <div class="navbar-main navbar-collapse collapse mainnav">
+        <div class="navbar-collapse collapse mainnav">
           <ul class="nav navbar-nav ">
             <li class="active"><a href="#about-us">About Us</a></li>
             <li><a href="#menu">Menu</a></li>
@@ -52,6 +54,7 @@
       </div>
     </nav>
 
+    <!-- Home: This section fills the viewport when the user first visits the site. It acts as "business card" with the most important information and an image to convey a relaxed feeling -->
     <section id="home" name="home" data-stellar-background-ratio="0.5">
       <div class="container full-height">
         <div class="desc Center-Container is-Inline">
@@ -75,6 +78,7 @@
       </div>
     </section>
 
+    <!-- Section that elaborates on the philosophy and service offered in small, concise paragraphs. Use of imagery for visuals and to excite the user. -->
     <section id="about-us" name="about-us" class="container">
       <article class="row">
         <div class="col-sm-12">
@@ -134,6 +138,7 @@
       </article>
     </section>
 
+    <!-- This seperator is only visible on smaller resolutions, where the section above does not contain imagery. It adds to visual excitement as well as dividing the section from the next. -->
     <div class="container-fluid hidden-lg">
       <div class="row" style="height: 400px; overflow: hidden; margin-top: 3em; margin-bottom: 0em">
         <div class="col-md-12" data-stellar-vertical-offset="200" style="background-image: url(/images/table.jpg); height: 400px; background-attachment: fixed; background-position: 75% 0; background-size: 400%" data-stellar-background-ratio="1.4">
@@ -141,6 +146,7 @@
       </div>
     </div>
 
+    <!-- Responsive menu with a blockquote element to reinforce philosophy section -->
     <section id="menu" name="menu" class="container text-center">
       <article class="row">
         <header>
@@ -152,7 +158,7 @@
             <h4 class="panel-title">
               Breakfast
             </h4>
-            <small style="margin-bottom: -1em">Breakfast is served Mon to Fri: 6:30am to 11am, Sat &amp; Sun: 9am to 2pm</small>
+            <small>Breakfast is served Mon to Fri: 6:30am to 11am, Sat &amp; Sun: 9am to 2pm</small>
           </div>
 
           <div class="panel-body">
@@ -193,10 +199,11 @@
 
 
         <div class="panel-menu col-lg-6">
-          <div class="panel-heading" role="tab" id="headingOne">
+          <div class="panel-heading menu-heading" role="tab" id="headingOne">
             <h4 class="panel-title">
                   Coffees
             </h4>
+            <small>All milk can be replaced with soymilk.</small>
           </div>
 
           <div class="panel-body">
@@ -235,16 +242,18 @@
           </div>
         </div>
 
+        <!-- Small seperator bar on larger resolutions where menu groups are next to each other. -->
         <div class="col-md-12 hidden-xs" style="height: 130px; overflow: hidden; margin-top: 1em; margin-bottom: 1em">
           <div data-stellar-vertical-offset="300" style="width: 100%; background-image: url(/images/cake.jpg); height: 400px; background-attachment: fixed; background-position: 75% 0; background-size: 100%" data-stellar-background-ratio="1.4">
           </div>
         </div>
 
         <div class="panel-menu col-lg-6">
-          <div class="panel-heading" role="tab" id="headingOne">
+          <div class="panel-heading menu-heading" role="tab" id="headingOne">
             <h4 class="panel-title">
                   Pastries &amp; Snacks
             </h4>
+            <small>Gluten Free <span class="gluten-free">(GF)</span> options available</small>
           </div>
 
           <div class="panel-body">
@@ -265,7 +274,7 @@
                 <h4 class="price">€4</h4>
               </li>
               <li>
-                <h4>Apple Crumble</h4>
+                <h4>Apple Crumble <span class="gluten-free">(GF)</span></h4>
                 <small>Tasty crumble of irish apples with some caramel crunch.</small>
                 <span class="price">€3</span>
               </li>
@@ -278,6 +287,7 @@
           </div>
         </div>
 
+        <!-- Blockquote that reinforces about us section -->
         <div class="panel-menu col-lg-6" style="border: 0">
           <div class="panel-heading visible-lg" role="tab">
             <h4 class="panel-title">
@@ -294,6 +304,12 @@
       </article>
     </section>
 
+    <!-- Media section for impressions -->
+    <section id="media" name="media" class="container">
+
+    </section>
+
+    <!-- Use a fluid container in this section to span the background across the entire page -->
     <section id="find-us" name="find-us" class="container-fluid">
       <article class="row text-center">
         <header>
@@ -314,16 +330,17 @@
             </div>
           </div>
           <div class="col-md-8 col-md-pull-4">
-            <img style="margin-left:auto; margin-right: auto" src="https://maps.googleapis.com/maps/api/staticmap?center=12%20Aungier%20Street,%20Dublin,%20Irland&zoom=17&size=1024x400&key=AIzaSyCQGNrd3we-7uVrh_N2zkhfZ_eVllOCHTs&markers=size:mid%7Ccolor:red%7C12%20Aungier%20Street,%20Dublin,%20Irland" class="img-responsive"></img>
+            <img src="https://maps.googleapis.com/maps/api/staticmap?center=12%20Aungier%20Street,%20Dublin,%20Irland&zoom=17&size=1024x400&key=AIzaSyCQGNrd3we-7uVrh_N2zkhfZ_eVllOCHTs&markers=size:mid%7Ccolor:red%7C12%20Aungier%20Street,%20Dublin,%20Irland" class="img-responsive center"></img>
           </div>
         </div>
-        <div class="col-xs-12" style="margin-top: 2em; margin-bottom: 0px">
+        <footer class="col-xs-12">
           <small>Website &copy;2015 Valentin Funk. Coffee Cup Icon made by Freepik from www.flaticon.com.</small>
-        </div>
+        </footer>
       </article>
     </section>
   </main>
 
+  <!-- Include Javascript libraries -->
   <!-- build:js scripts/vendor.js -->
   <!-- bower:js -->
   <script src="/bower_components/jquery/dist/jquery.js"></script>
@@ -349,6 +366,7 @@
   <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
   <!-- endbuild -->
 
+  <!-- Include custom JS -->
   <!-- build:js scripts/main.js -->
   <script src="scripts/main.js"></script>
   <!-- endbuild -->
